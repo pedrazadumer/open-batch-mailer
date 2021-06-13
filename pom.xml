@@ -11,6 +11,7 @@
 
     <modules>
         <module>open-batch-mailer-core</module>
+        <module>open-batch-mailer-csv-request-reader</module>
     </modules>
 
     <properties>
