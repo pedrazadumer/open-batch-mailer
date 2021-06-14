@@ -1,0 +1,3 @@
+openbatchmailer\request\CsvSendRequestReader.class
+openbatchmailer\request\model\MessageSpecification.class
+openbatchmailer\request\util\GenericCsvReader.class

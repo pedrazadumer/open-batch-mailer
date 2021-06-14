@@ -3,6 +3,7 @@ package openbatchmailer;
 import openbatchmailer.model.Message;
 import org.junit.Test;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,23 +22,23 @@ public class DestinationComparisonTest {
     @Test
     public void shouldReturnFalseWithDifferentMessages() {
         Message messageA = new Message();
-        Message messageB = new Message(TEST_MESSAGE_BODY);
+        Message messageB = new Message(TEST_MESSAGE_BODY, Collections.emptyList());
 
         assertFalse(messageA.equals(messageB));
     }
 
     @Test
     public void shouldReturnTrueWithEquivalentMessages() {
-        Message messageA = new Message(TEST_MESSAGE_BODY);
-        Message messageB = new Message(TEST_MESSAGE_BODY);
+        Message messageA = new Message(TEST_MESSAGE_BODY, Collections.emptyList());
+        Message messageB = new Message(TEST_MESSAGE_BODY, Collections.emptyList());
 
         assertTrue(messageA.equals(messageB));
     }
 
     @Test
     public void shouldReturnTheCorrectMessageKey() {
-        Message messageA = new Message(A_DIFFERENT_MESSAGE_BODY);
-        Message messageB = new Message(TEST_MESSAGE_BODY);
+        Message messageA = new Message(A_DIFFERENT_MESSAGE_BODY, Collections.emptyList());
+        Message messageB = new Message(TEST_MESSAGE_BODY, Collections.emptyList());
 
         Map<Message, String> messageMapping = new HashMap<>();
         messageMapping.put(messageA, MESSAGE_A_KEY);
