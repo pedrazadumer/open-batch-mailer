@@ -1,0 +1,3 @@
+recipientList,ccList,csvPath
+fabiola_posada@gmail.com,nelson_polania@gmail.com,file:src/test/resources/test-attachment-1.txt
+nelson_polania@gmail.com;polilla_comediante@gmail.com,fabiola_posada@gmail.com;gorda_fabiola_comediante@gmail.com,file:src/test/resources/test-attachment-2.txt
